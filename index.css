@@ -1,0 +1,888 @@
+@font-face {
+    font-family: 'annabel';
+    src: url(/Fonts/Annabelle.ttf);
+}
+@font-face {
+    font-family: 'montser-Regular';
+    src: url(/Fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'montser-Medium';
+    src: url(/Fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'montser-Light';
+    src: url(/Fonts/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: 'montser-ExtraBold';
+    src: url(/Fonts/Montserrat-ExtraBold.ttf);
+}
+s
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'montser-Regular';
+    width: 100%;
+    height: auto;
+}
+.divide{
+    margin: 2vw auto;
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.divideText{
+    text-align: center;
+    font-family: 'montser-Medium';
+    font-size: 1.5vw;
+    color: black;
+    width: fit-content;
+}
+.divideTextLight{
+    text-align: center;
+    font-family: 'montser-Medium';
+    font-size: 1.2vw;
+    color: black;
+    width: fit-content;
+}
+.divideLine{
+    margin: 0 auto;
+    width: 50%;
+    height: 0.06vw;
+    background-color: black;
+}
+.classes{
+    width: 80%;
+    margin: 1vw auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1vw;
+}
+.classBox{
+    width: 19vw;
+    height: 19vw;
+    padding-top: 15vw;       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+.classText{
+    font-family: 'montser-Medium';
+    font-size: 1.2vw;
+    color: black;
+    width: fit-content;
+}
+.divideClassLine{
+    margin: 0 auto;
+    width: 50%; 
+    height: 0.05vw;
+    background-color: black;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+.classLink{
+    text-align: center;
+    text-decoration: none;
+}
+
+
+i{
+    user-select: none;
+    font-family: 'montser-Medium';
+    font-size: 2vw;
+    cursor: pointer;
+    color: black;
+    transition: all 0.6s ease-out;
+}
+i:hover{
+    transition: all 0.6s ease-out;
+    color: #ffde00;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+}
+.wrapper{
+    width: 82%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vw auto;
+}
+.carousel{
+    margin: 0 1vw;
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 18vw;
+    gap: 1vw;   
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    user-drag: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.imageCard{
+    margin: 0 auto;
+    width: 18vw;
+    height: 18vw;
+}
+.sale{
+    color: white;
+    align-items: right;
+    justify-content: right;
+}
+.percent{
+    font-size: 0.8vw;
+    margin-left: 14vw;
+    width: 4vw;
+    text-align: center;
+    padding: 0.2vw;
+    display: block;
+    background-color: #eb6200;
+}
+.new{
+    font-size: 1vw;
+    margin-left: 14vw;
+    width: 4vw;
+    text-align: center;
+    padding: 0.2vw;
+    display: block;
+    background-color: #33a31d;
+}
+.vigoda{
+    font-size: 0.8vw;
+    margin-left: 10vw;
+    width: 8vw;
+    text-align: center;
+    margin-top: 0.5vw;
+    padding: 0.2vw;
+    display: block;
+    background-color: #555555;
+}
+.productLink{
+    text-align: center;
+    font-size: 0.8vw;
+    color: black;
+    text-decoration: none;
+    text-decoration: underline;
+    font-family: 'montser-Medium';
+}
+.productPrice{
+    text-align: center;
+    font-family: 'montser-Medium';
+    font-size: 1.5vw;
+}
+.oldPrice{
+    text-align: center;
+    font-size: 0.8vw;
+    color: #555555;
+    text-decoration: line-through;
+}
+.toCart{
+    margin: 0 auto;
+    padding: 0.5vw;
+    width: 8vw;          
+    border-radius: 1.1vw; 
+    text-decoration: none;
+    text-align: center;
+    font-family: 'montser-Medium';
+    display: block;
+    font-size: 1vw;
+    background-color: #ffde00;
+    color: black;
+}
+#logo1{
+    width: 10vw;
+    height: 4vw;
+}
+#logo2{
+    width: 10vw;
+    height: 1.6vw;
+}
+#logo3{
+    width: 10vw;
+    height: 3.3vw;
+}
+#logo4{
+    width: 10vw;
+    height: 2vw;
+}
+#logo5{
+    width: 8vw;
+    height: 7vw;
+}
+.styles{
+    width: 18vw;    
+    height: 13vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+.styleImage{
+    user-select: none;
+    margin: 0 auto;
+}
+.styles2{
+    width: 24vw;    
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    padding-top: 11vw;
+}
+.textStyle{
+    padding: 2vw;
+    text-align: center;
+    width: 100vw;
+    font-family: 'montser-Light';
+    color: white;
+    font-size: 1.5vw;
+    margin: 0 auto;
+    background: linear-gradient(to top, black, transparent);
+    background-blend-mode: multiply;
+    opacity: 1;
+}
+/* Карусель стилей */
+.carousel2{
+    margin: 0 1vw;
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 24vw;
+    gap: 1.2vw;       
+}
+/* Раздел о компании */
+.companyContainer{
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    background-color: #ffde00;
+    align-items: center;
+    justify-content: center;
+}
+.imageContainer{
+    width: 25vw;
+    height: 25vw;
+    background-image: url(Images/descLamp.png);
+    background-size: cover;
+}
+.textContainer{
+    font-family: 'montser-Regular';
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    hyphens: auto;
+}
+.textContainer p{
+    text-align: justify;
+    margin-top: 2vw;
+}
+.textSpan{
+    font-family: 'montser-Medium';
+    font-size: 1vw;
+}
+.divideCompany{
+
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.divideLineCo{
+    width: 72%; 
+    height: 0.06vw;
+    background-color: black;
+}
+.buttonCo{
+    padding-top: 0.4vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vw;
+    text-decoration: none;
+    font-family: 'montser-Medium';
+    width: 20vw;
+    color: white;
+    display: block;
+    height: 2vw;
+    background-color: black;
+    text-align: center;
+    border-radius: 2vw;
+}
+/* Стили для баннера */
+.banner{
+    display: flex;
+    width: 80%;
+    height: auto;
+    gap: 1vw;
+    margin: 0 auto;
+}
+.mainBanner{
+    display: flex;
+    width: 55vw;
+    height: 19vw;
+    background-color: #555555;
+    background-image: url(BannerImages/mainBanner.png);
+    background-size: cover;
+}
+.empty{
+    width: 52%;
+}
+.saleBanner{
+    display: flex;
+    flex-direction: column;
+    font-family: 'montser-ExtraBold';
+    font-size: 4vw;
+    color: white;
+    margin-top: 2vw;
+}
+.saleBanner a{
+    margin-top: 2.8vw;
+    margin-left: 1vw;
+    text-decoration: none;
+    font-family: 'montser-Medium';
+    font-size: 1.2vw;
+    color: white;
+}
+.flag{
+    display: flex;
+    text-align: center;
+    margin-top: 12.9vw;  
+    margin-right: 1vw;     
+    width: 6vw;
+    height: 6.1vw;
+    background-image: url(BannerImages/Hexagon.png);
+    background-size: cover;
+    font-family: 'montser-Medium';
+    font-size: 1vw;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.flag span{
+    font-size: 1.7vw;
+}
+.flag p{
+    margin-top: 1vw;
+}
+.bannerColumn{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.secondBanner{
+    display: flex;
+    width: 25vw;
+    height: 9vw;
+    background-size: cover;
+}
+#first{
+    background-image: url(BannerImages/second.png);
+}
+#second{
+    position: relative;
+    background-image: url(BannerImages/second2.png);
+    display: flex;
+    flex-direction: column;    
+}
+.secondBanner #firstText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+    font-family: 'montser-ExtraBold';
+    font-size: 1.5vw;   
+    color: black;
+}
+.secondBanner #firstText a{
+    margin-top: 1.8vw;  
+    text-decoration: none;
+    text-decoration: underline;
+    font-family: 'montser-Regular';
+    font-size: 0.8vw;
+    color: #eb6200;
+}
+.secondBanner #bannerLogo{
+    margin-top: 7vw;
+    margin-left: 11vw;   
+    width: 6.2vw;
+    height: 1.8vw;
+    background-image: url(BannerImages/logo_gor.png);
+    background-size: cover;
+}
+.secondBanner #bant{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 5vw;
+    background-image: url(BannerImages/bant.png);
+    background-size: cover;
+}
+.secondBanner #textSecBanner{
+    text-align: right;
+    width: 12vw;
+    font-family: 'montser-ExtraBold';
+    font-size: 2vw;
+    color: white;
+    margin-top: 2.5vw;
+    margin-left: 12.5vw;     
+}
+#textSecBanner p{
+    font-family: 'montser-Regular';
+    font-size: 0.8vw;
+    color: white;
+    text-align: right;
+}
+#textSecBanner a{
+    margin: 0; padding: 0;
+    text-decoration: underline;
+    color: #eb6200;
+    font-family: 'montser-Regular';
+    font-size: 0.8vw;
+    margin-bottom: 0.5vw;
+}
+#secLink{     
+    text-decoration: underline;
+    color: #eb6200;
+    font-family: 'montser-Regular';
+    font-size: 0.8vw;
+    margin-bottom: 0.5vw;
+}
+@media screen and (min-width: 1400px){
+    #coDivide{
+        display: none;
+    }
+}
+@media screen and (max-width: 1400px){
+    .banner{
+        display: flex;
+        width: 100%;
+        height: auto;
+        gap: 1vw;
+        margin: 0 auto;
+    }
+    .mainBanner{
+        display: flex;
+        width: 70vw;
+        height: 24vw;   
+        background-color: #555555;
+        background-image: url(BannerImages/mainBanner.png);
+        background-size: cover;
+    }
+    .empty{
+        width: 51%;         
+    }
+    .saleBanner{
+        display: flex;
+        flex-direction: column;
+        font-family: 'montser-ExtraBold';
+        font-size: 5vw; 
+        color: white;
+        margin-top: 2vw;
+    }
+    .saleBanner a{
+        margin-top: 4vw;
+        margin-left: 1.7vw;
+        text-decoration: none;
+        font-family: 'montser-Medium';
+        font-size: 1.6vw;
+        color: white;
+    }
+    .flag{
+        display: flex;
+        text-align: center;
+        margin-top: 15.9vw;  
+        margin-right: 1vw;     
+        width: 8vw;
+        height: 8.1vw;
+        background-image: url(BannerImages/Hexagon.png);
+        background-size: cover;
+        font-family: 'montser-Medium';
+        font-size: 1.5vw;
+        color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    .flag span{
+        font-size: 2vw;
+    }
+    .flag p{
+        margin-top: 1vw;
+    }
+    .bannerColumn{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+    .secondBanner{
+        display: flex;
+        width: 30vw;
+        height: 11.5vw;   
+        background-size: cover;
+    }
+    #first{
+        background-image: url(BannerImages/second.png);
+    }
+    #second{
+        position: relative;
+        background-image: url(BannerImages/second2.png);
+        display: flex;
+        flex-direction: column;    
+    }
+    .secondBanner #firstText{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.5vw;
+        margin-top: 0.5vw;
+        font-family: 'montser-ExtraBold';
+        font-size: 2vw;       
+        color: black;
+    }
+    .secondBanner #firstText a{
+        margin-top: 1.5vw;  
+        text-decoration: none;
+        text-decoration: underline;
+        font-family: 'montser-Regular';
+        font-size: 1.5vw;
+        color: #eb6200;
+    }
+    .secondBanner #bannerLogo{
+        margin-top: 9vw;
+        margin-left: 12vw;   
+        width: 7.5vw; 
+        height: 2vw;    
+        background-image: url(BannerImages/logo_gor.png);
+        background-size: cover;
+    }
+    .secondBanner #bant{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 5vw;
+        background-image: url(BannerImages/bant.png);
+        background-size: cover;
+    }
+    .secondBanner #textSecBanner{
+        text-align: right;
+        width: 12vw;
+        font-family: 'montser-ExtraBold';
+        font-size: 3vw;
+        color: white;
+        margin-top: 2.5vw;
+        margin-left: 17vw;      
+    }
+    #textSecBanner p{
+        font-family: 'montser-Regular';
+        font-size: 1vw;
+        color: white;
+        text-align: right;
+    }
+    #textSecBanner a{
+        margin: 0; padding: 0;
+        text-decoration: underline;
+        color: #eb6200;
+        font-family: 'montser-Regular';
+        font-size: 1.5vw;
+        margin-bottom: 0.5vw;
+    }
+    #secLink{     
+        text-decoration: underline;
+        color: #eb6200;
+        font-family: 'montser-Regular';
+        font-size: 1.5vw;
+        margin-bottom: 0.5vw;
+    }
+    .divide{
+        margin: 2vw auto;
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .divideText{
+        text-align: center;
+        font-family: 'montser-Medium';
+        font-size: 2.5vw;
+        color: black;
+        width: fit-content;
+    }
+    .divideTextLight{
+        text-align: center;
+        font-family: 'montser-Medium';
+        font-size: 2.2vw;
+        color: black;
+        width: fit-content;
+    }
+    .divideLine{
+        margin: 0 auto;
+        width: 50%;
+        height: 0.06vw;
+        background-color: black;
+    }
+    .classes{
+        width: 100%;
+        margin: 2vw auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2vw;
+    }
+    .classBox{
+        width: 23vw;
+        height: 23vw;
+        padding-top: 15vw;       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+    }
+    .classText{
+        font-family: 'montser-Medium';
+        font-size: 2vw;
+        color: black;
+        width: fit-content;
+    }
+    .divideClassLine{
+        margin: 0 auto;
+        width: 50%; 
+        height: 0.05vw;
+        background-color: black;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    .classLink{
+        text-align: center;
+        text-decoration: none;
+    }
+    i{
+        user-select: none;
+        font-family: 'montser-Medium';
+        font-size: 3vw;
+        cursor: pointer;
+        color: black;
+        transition: all 0.6s ease-out;
+    }
+    i:hover{
+        transition: all 0.6s ease-out;
+        color: #ffde00;
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: black;
+    }
+    .wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1vw auto;
+    }
+    .carousel{
+        margin: 0 1vw;
+        overflow: hidden;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 29vw;
+        gap: 1vw;   
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        user-drag: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    
+    .imageCard{
+        margin: 0 auto;
+        width: 29vw;
+        height: 29vw;
+    }
+    .sale{
+        color: white;
+        align-items: right;
+        justify-content: right;
+    }
+    .percent{
+        font-size: 1.5vw;
+        margin-left: 25vw;
+        width: 5vw;
+        text-align: center;
+        padding: 0.5vw;
+        display: block;
+        background-color: #eb6200;
+    }
+    .new{
+        font-size: 1.5vw;
+        margin-left: 25vw;
+        width: 5vw;
+        text-align: center;
+        padding: 0.2vw;
+        display: block;
+        background-color: #33a31d;
+    }
+    .vigoda{
+        font-size: 1.5vw;
+        margin-left: 15vw;
+        width: 15vw;
+        text-align: center;
+        margin-top: 0.5vw;
+        padding: 0.2vw;
+        display: block;
+        background-color: #555555;
+    }
+    .productLink{
+        text-align: center;
+        font-size: 1.5vw;
+        color: black;
+        text-decoration: none;
+        text-decoration: underline;
+        font-family: 'montser-Medium';
+    }
+    .productPrice{
+        text-align: center;
+        font-family: 'montser-Medium';
+        font-size: 2.5vw;
+    }
+    .oldPrice{
+        text-align: center;
+        font-size: 1.5vw;
+        color: #555555;
+        text-decoration: line-through;
+    }
+    .toCart{
+        margin: 0 auto;
+        padding: 1vw;
+        width: 15vw;          
+        border-radius: 2.5vw; 
+        text-decoration: none;
+        text-align: center;
+        font-family: 'montser-Medium';
+        display: block;
+        font-size: 2vw;
+        background-color: #ffde00;
+        color: black;
+    }
+    #logo1{
+        width: 20vw;
+        height: 8vw;
+    }
+    #logo2{
+        width: 20vw;
+        height: 3.2vw;
+    }
+    #logo3{
+        width: 20vw;
+        height: 6.6vw;
+    }
+    #logo4{
+        width: 20vw;
+        height: 4vw;
+    }
+    #logo5{
+        width: 16vw;
+        height: 14vw;
+    }
+    #brand{
+        grid-auto-columns: 29.6vw;
+    }
+    #style{
+        grid-auto-columns: 29.6vw;
+    }
+    .styles2{
+        width: 29.5vw;
+        height: 18.2vw;
+        padding-top: 12vw;
+    }
+    .textStyle{
+        padding: 2vw;
+        text-align: center;
+        width: 100vw;
+        font-family: 'montser-Light';
+        color: white;
+        font-size: 2.5vw;
+        margin: 0 auto;
+        background: linear-gradient(to top, black, transparent);
+        background-blend-mode: multiply;
+        opacity: 1;
+    }
+    .styles{
+        width: 29vw;    
+        height: 23vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+    }
+    .styleImage{
+        user-select: none;
+        margin: 0 auto;
+    }
+    .imageContainer{
+        display: none;
+    }  
+    .divideCompany{
+        display: none;
+    }
+    #coDivide .divideLine{
+        width: 33%;
+        margin: 0 auto; 
+    }
+    #coDivide .divideTextLight{
+        margin: 0 auto;
+    }
+    .textContainer{
+        font-family: 'montser-Regular';
+        padding: 2vw;
+        font-size: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        hyphens: auto;
+    }
+    .textContainer p{
+        text-align: justify;
+        margin-top: 2vw;
+    }
+    .textSpan{
+        font-family: 'montser-Medium';
+        font-size: 2.5vw;
+    }
+    .buttonCo{
+        padding-top: 0.7vw;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1vw;
+        text-decoration: none;
+        font-family: 'montser-Medium';
+        width: 50vw;
+        color: white;
+        display: block;
+        height: 4vw;
+        background-color: black;
+        text-align: center;
+        border-radius: 3vw;
+    }  
+}

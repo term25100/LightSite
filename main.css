@@ -1,0 +1,543 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+* {
+    box-sizing: border-box;
+  }
+@font-face {
+    font-family: 'annabel';
+    src: url(/Fonts/Annabelle.ttf);
+}
+@font-face {
+    font-family: 'montser-Regular';
+    src: url(/Fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'montser-Medium';
+    src: url(/Fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'montser-Light';
+    src: url(/Fonts/Montserrat-Light.ttf);
+}
+
+header{
+    width: 100%;
+    height: auto;
+    margin: 0.5vw auto;
+}
+.logo{
+    display: block;
+    background-color: transparent;
+    font-family: 'annabel';
+    font-size: 2.4vw;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+.circle{
+    width: 1.6vw;
+    height: 1.6vw;
+    background-color: #ffde00;
+    border-radius: 10vw;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10vw;
+    backdrop-filter: blur(30px);
+}
+.top{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    font-family: 'montser-Regular';
+    font-size: 1vw;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+.menu{
+    margin: 0 auto;
+    margin-top: 1vw;
+    font-family: 'montser-Medium';
+    font-size: 0.8vw;
+    width: 100%;
+    height: auto;
+    background-color: #ffde00;
+}
+.menuContainer{
+    width: 80%;
+    margin: 0 auto;
+}
+ul{
+    padding: 0;
+    margin: 0;  
+    list-style-type: none;
+    display: flex;
+}
+li{
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+.form{
+    margin-top: 1vw;
+    display: flex;
+    width: 12vw;
+    height: 1.4vw;
+    border: 0.1vw solid black;  
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1vw;   
+}
+.search{
+    font-family: 'montser-Regular';
+    font-size: 0.8vw;
+    margin: 0 auto;
+    height: 1.2vw;
+    width: 10vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.searchButton{
+    margin: 0 auto;
+    height: 1.2vw;
+    width: 1.2vw;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.searchImage{
+    margin: 0 auto;
+    object-fit: cover;
+    width: 1.2vw;
+    height: 1.2vw;
+}
+.regular{
+    display: flex;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;  
+}
+.regularLink{
+    margin-left: 0.5vw;
+    margin-right: 0.5vw; 
+    color: black;
+    text-decoration: none;
+    text-decoration: underline;
+}
+.regularImage{
+    width: 1.2vw;
+    height: 1.2vw;
+}
+.cartButton{
+    display: flex;
+    padding-top: 0.3vw; 
+    margin-top: 0.7vw;
+    width: 7vw;
+    height: 1.5vw;
+    background-color: black;
+    border-radius: 1vw;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.8vw;
+}
+.cartImage{
+    width: 0.9vw;
+    height: 0.9vw;
+    margin-left: 0.5vw;
+}
+.catalogButton{
+    text-align: center;
+    font-size: 0.8vw;
+    display: block;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: black;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    transition: all 0.7s ease-out;
+}
+.catalogButton:hover{
+    transition: all 0.4s ease-out;
+    color: #ffde00;
+    background-color: #000000;
+}
+.dropdown{
+    
+    margin: 0.5vw 1vw;
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover .dropContent {
+    display: block;
+}
+.dropBut{
+    background-color: transparent;
+    font-size: 0.8vw;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.dropBut::after{
+    content: " + ";
+}
+.dropContent{
+    background-color: #ffde00;
+    display: none;
+    position: absolute;
+    padding: 0.5vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 0.6vw;
+    z-index: 1;
+}
+.dropContent a{
+    font-size: 1vw;
+    text-align: center;
+    border-radius: 0.5vw;
+    margin: 0.5vw;
+    padding: 0.3vw;
+    color: black;
+    background-color: #ffde00;
+    text-decoration: none;
+    display: block;
+    transition: all ease-out 0.3s;
+}
+.dropContent a:hover {
+    transition: all ease-out 0.6s;
+    background-color: #000000;
+    color: #ffde00;
+}
+.navButtons{
+    justify-content: space-between;
+    margin-left: 14vw;  
+    margin-top: 0.5vw;
+    display: flex;
+}
+.navButton{
+    text-decoration: none;
+    margin-left: 2vw;
+    color: #000000;
+    font-size: 0.8vw;
+    transition: all ease-in 0.6s;
+}
+.navButton:hover{
+    transition: all ease-out 0.6s;
+    text-decoration: underline;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #000000;
+}
+.h1Foot{
+    margin: 0;
+    padding: 0;
+    font-weight: 50;
+    font-family: 'montser-Light';
+    font-size: 1.3vw; 
+    color: #ffde00;
+    text-align: left;   
+}
+.FootContainer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+.FootColumns{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.FootColumn{
+    flex-grow: 1;
+    margin: 0 9vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+}
+.FootLink{
+    margin: 0;
+    padding: 0;
+    font-family: 'montser-Regular';
+    color: #ffffff;
+    font-size: 0.8vw;
+    text-align: left;
+    margin-top: 0.5vw;
+}
+.FootFlex{
+    margin: 0;
+    padding: 0;
+    margin: 0.2vw;
+    display: flex;
+    font-family: 'montser-Regular';
+    font-size: 0.8vw;
+    color: #ffffff;
+}
+.pFoot{
+    margin: 0;
+    padding: 0;
+}
+.FootCol{
+    display: flex;
+    flex-direction: column;
+}
+.Copyright{
+    font-family: 'montser-Regular';
+    width: 100%;
+    height: auto;
+    font-size: 0.6vw;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(117, 117, 117);
+}
+.footIcon{
+    margin-top: 0.3vw;
+    margin-right: 0.5vw;
+    width: 1vw;
+    height: 1vw;
+}
+@media screen and (max-width: 1400px){
+    header{
+        background-color: #ffde00;
+        margin: 0 auto;
+        margin-bottom: 0.5vw;
+    }
+    #locationLabel{
+        display: none;
+    }
+    #telLabel{
+        display: none;
+    }
+    #clocksLabel{
+        display: none;
+    }
+    .logo{
+        display: block;
+        background-color: transparent;
+        font-family: 'annabel';
+        font-size: 8vw;
+        color: black;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+    }
+    .circle{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+        height: auto; 
+        margin: 0 auto; 
+        margin-right: 2vw;
+        margin-left: 2vw; 
+    }
+    .top{
+        background-color: #ffde00;
+        width: 100%;
+    }
+    .form{
+        padding: 0.5vw;
+        margin-top: 3vw;    
+        display: flex;
+        width: 27vw;
+        height: 6vw;
+        border: 0.1vw solid black;  
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 3vw;   
+    }
+    .searchButton{
+        margin: 0 auto;
+        height: 3.5vw;
+        width: 3.5vw;
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+    .searchImage{
+        margin: 0 auto;
+        object-fit: cover;
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    .search{
+        font-family: 'montser-Regular';
+        font-size: 2.5vw;
+        margin: 0 auto;
+        height: 3.5vw;
+        width: 22vw;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .cartButton{
+        display: flex;
+        padding: 2vw;       
+        margin-top: 3vw;
+        width: 15vw;    
+        height: 6vw;    
+        background-color: black;
+        border-radius: 3vw;
+        color: white;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 2vw; 
+    }
+    .cartImage{
+        width: 2.5vw;
+        height: 2.5vw;
+        margin-left: 0.5vw;
+    }
+    .regular{
+        display: flex;  
+        margin-top: 3.5vw;
+        margin-left: 1vw;
+        margin-right: 1vw;  
+    }
+    .regularLink{
+        margin-left: 0.5vw;
+        margin-right: 0.5vw; 
+        color: black;
+        text-decoration: none;
+        text-decoration: underline;
+    }
+    .regularImage{
+        width: 5vw;
+        height: 5vw;
+    }
+    .menu{
+        display: none;
+    }
+    .dropBut{
+        margin-right: 2vw;
+        margin-top: 3vw;
+        width: 5vw;
+        height: 5vw;
+    }
+    .dropBut::after{
+        content: "";
+    }
+    .btn-image{
+        width: 5vw;
+        height: 5vw;
+    }
+    .dropContent{
+        margin-top: 2vw;
+        width: 40vw;   
+        background-color: #ffde00;
+        display: none;
+        position: absolute;
+        left: -32vw;
+        padding: 1vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border-radius: 1vw;
+        z-index: 2;
+    }
+    .dropContent a{
+        font-size: 3vw;
+        text-align: center;
+        border-radius: 1vw;
+        margin: 0.5vw;
+        padding: 0.3vw;
+        color: black;
+        background-color: #ffde00;
+        text-decoration: none;
+        display: block;
+        transition: all ease-out 0.3s;
+    }
+    .dropContent a:hover {
+        transition: all ease-out 0.6s;
+        background-color: #000000;
+        color: #ffde00;
+    }
+    .h1Foot{
+        margin: 0;
+        padding: 0;
+        font-weight: 50;
+        font-family: 'montser-Light';
+        font-size: 2.5vw; 
+        color: #ffde00;
+        text-align: left;   
+    }
+    .FootColumn{
+        flex-grow: 1;
+        margin: 0 2vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 1vw;
+    }
+    .FootLink{
+        margin: 0;
+        padding: 0;
+        font-family: 'montser-Regular';
+        color: #ffffff;
+        font-size: 2vw;
+        text-align: left;
+        margin-top: 0.5vw;
+    }
+    .FootFlex{
+        margin: 0;
+        padding: 0;
+        margin: 0.2vw;
+        display: flex;
+        font-family: 'montser-Regular';
+        font-size: 2vw;
+        color: #ffffff;
+    }
+    .pFoot{
+        margin: 0;
+        padding: 0;
+    }
+    .FootCol{
+        display: flex;
+        flex-direction: column;
+    }
+    .Copyright{
+        font-family: 'montser-Regular';
+        width: 100%;
+        height: auto;
+        font-size: 1vw;
+        text-justify: center;
+        text-align: center;
+        margin: 0 auto;
+        color: rgb(117, 117, 117);
+    }
+    .footIcon{
+        margin-top: 0.3vw;
+        margin-right: 0.5vw;
+        width: 2vw;
+        height: 2vw;
+    }
+}
+@media  screen and(min-width:1400px) {
+    .navButtons{
+        justify-content: space-between;
+        margin: 0;  
+        margin-top: 0.5vw;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    #mobileMenu{
+        display: none;
+    }
+}    
