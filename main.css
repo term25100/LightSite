@@ -428,7 +428,7 @@ footer{
         display: none;
     }
     .dropBut{
-        margin-right: 2vw;
+        margin-right: 3vw;
         margin-top: 3vw;
         width: 5vw;
         height: 5vw;
@@ -446,7 +446,7 @@ footer{
         background-color: #ffde00;
         display: none;
         position: absolute;
-        left: -32vw;
+        left: -31vw;
         padding: 1vw;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         border-radius: 1vw;
