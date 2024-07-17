@@ -388,9 +388,9 @@ footer{
     }
     .cartButton{
         display: flex;
-        padding: 2vw;       
+        padding: 1.5vw;       
         margin-top: 3vw;
-        width: 15vw;    
+        width: 20vw;    
         height: 6vw;    
         background-color: black;
         border-radius: 3vw;
@@ -399,11 +399,11 @@ footer{
         text-align: center;
         justify-content: center;
         text-decoration: none;
-        font-size: 2vw; 
+        font-size: 3vw; 
     }
     .cartImage{
-        width: 2.5vw;
-        height: 2.5vw;
+        width: 3vw;
+        height: 3vw;
         margin-left: 0.5vw;
     }
     .regular{
