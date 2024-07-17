@@ -87,10 +87,11 @@ li{
     margin-bottom: 0.5vw;
 }
 .form{
-    margin-top: 1vw;
+    padding: 0.2vw;
+    margin-top: 0.9vw;
     display: flex;
     width: 12vw;
-    height: 1.4vw;
+    height: 1.5vw;
     border: 0.1vw solid black;  
     justify-content: space-between;
     align-items: center;
